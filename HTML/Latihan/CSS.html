@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan Layouting CSS</title>
+
+    <style>
+        .header {
+            width: 784px;
+            height: 200px;
+            background-color: aqua;
+        }
+
+        .content {
+            display: flex;
+        }
+
+        .content-left {
+            width: 200px;
+            height: auto;
+            background-color: yellow;
+        }
+
+        .content-right {
+            width: 584px;
+            height: auto;
+            background-color: red;
+        }
+
+        .big-content {
+            height: 400px;
+        }
+
+        .footer {
+            width: 784px;
+            height: 100px;
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="header"></div>
+    <div class="content">
+        <div class="content-left">
+            <div class="big-content"></div>
+        </div>
+        <div class="content-right">
+                <div class="big-content"></div>
+        </div>
+    </div>
+    <div class="footer"></div>
+</body>
+</html>
