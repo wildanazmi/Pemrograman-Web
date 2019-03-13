@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,16 @@
     <title>Latihan Layouting CSS</title>
 
     <style>
+        body {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
         .header {
             width: 784px;
             height: 200px;
             background-color: aqua;
+            border: 4px solid;
         }
 
         .content {
@@ -21,35 +28,66 @@
             width: 200px;
             height: auto;
             background-color: yellow;
+            border-left: 4px solid;
+            border-right: 4px solid;
         }
 
         .content-right {
-            width: 584px;
+            width: 580px;
             height: auto;
             background-color: red;
+            font-weight: bold;
+            border-right: 4px solid;
         }
 
         .big-content {
             height: 300px;
+            line-height: 300px;
         }
 
         .footer {
             width: 784px;
             height: 100px;
             background-color: purple;
+            border: 4px solid;
+        }
+
+        .footer>span {
+            line-height: 100px;
+        }
+
+        .header>span {
+            line-height: 200px;
+            font-weight: bold;
+        }
+
+        .big-content>span {
+            line-height: 1.5;
+            display: inline-block;
+            vertical-align: middle;
         }
     </style>
 </head>
+
 <body>
-    <div class="header"></div>
+    <div class="header">
+        <span>BAGIAN HEADER (WIDTH: 784PX, HEIGHT: 200PX)</span>
+    </div>
     <div class="content">
         <div class="content-left">
-            <div class="big-content"></div>
+            <div class="big-content">
+                <span>KOLOM 1<br />AUTO HEIGHT<br />WIDTH: 200PX</span>
+            </div>
         </div>
         <div class="content-right">
-                <div class="big-content"></div>
+            <div class="big-content">
+                <span>KOLOM 2<br />AUTO HEIGHT<br />WIDTH: 584PX</span>
+            </div>
         </div>
     </div>
-    <div class="footer"></div>
+    <div class="footer">
+        <span>FOOTER WIDTH: 784PX HEIGHT: 100PX</span>
+    </div>
 </body>
+
 </html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Feedback Form</title>
+</head>
+
+<body>
+    <form action="https://w3c.com" method="GET">
+        <h1>Feedback Form</h1>
+        <p>Please fill out this form to help us improve our site.</p>
+        Name: <input type="text" name="name" id="name"><br><br>
+        Comments: <br>
+        <textarea name="comments" id="comments" cols="60" rows="5" placeholder="Enter comments here."></textarea><br><br>
+        Email Address: <input type="email" name="email" id="email"><br><br>
+        <strong>Things you liked:</strong><br>
+        Site design <input type="checkbox" name="liked" id="site-design"> Links <input type="checkbox" name="liked" id="links">
+        Ease of use <input type="checkbox" name="liked" id="eou"> Images <input type="checkbox" name="liked" id="images">
+        Source code <input type="checkbox" name="liked" id="sc"><br><br>
+        <strong>How did you get to our site?:</strong><br>
+        Search engine <input type="radio" name="get" id="se"> Links from another site <input type="radio" name="get" id="link">
+        Deitel.com Web site <input type="radio" name="get" id="deitel"> Reference in a book <input type="radio" name="get"
+            id="reference"> Other <input type="radio" name="get" id="others"><br><br>
+        Rate our site: <select name="rate" id="rate">
+            <option value="Amazing">Amazing</option>
+            <option value="10">10</option>
+            <option value="9">9</option>
+            <option value="8">8</option>
+            <option value="7">7</option>
+            <option value="6">6</option>
+            <option value="5">5</option>
+            <option value="4">4</option>
+            <option value="3">3</option>
+            <option value="2">2</option>
+            <option value="1">1</option>
+            <option value="Awful">Awful</option>
+        </select>
+        <br><br>
+        <button type="submit">Submit</button> <button type="reset">Clear</button>
+    </form>
+</body>
+
+</html>
