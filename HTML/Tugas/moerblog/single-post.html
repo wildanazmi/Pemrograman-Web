@@ -15,7 +15,10 @@
 <body>
 
     <div class="container">
-        <img src="images/head.png" alt="Website Logo">
+        <div class="cover">
+            <img src="https://cardse.net/i/2016/05/21/1a59a67c21c085e127776befc63cba47.png" alt="#" height="80px;">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in orci luctus, mollis turpis vel, rutrum massa.</p>
+        </div>
         <ul class="navbar">
             <li class="active"><a href="index.html">Beranda</a></li>
             <li><a href="about.html">Tentang Saya</a></li>
@@ -75,14 +78,14 @@
                     <h3 style="margin-bottom: 0px;"><i class="fas fa-comment"></i> Komentar</h3>
                     <h4>Menampilkan <strong>3</strong> komentar.</h4>
                     <p>Jangan lupa tinggalkan komentar ya guyss...</p>
-                    <div>
+                    <div class="comment-list">
                         <div class="comment-item">
                             <div class="comment-box">
                                 <div class="comment-content">
                                     <div class="comment-author">
                                         <span style="font-weight: bold;">Muhammad Hatta</span>
                                         <div class="time">
-                                            <span class="help-text">11 Februari 2019</span>
+                                            <span class="help-text">moer@student.uns.ac.id - 04/06/2019, 9:57:22 PM</span>
                                         </div>
                                     </div>
                                     <div class="comment-body">
@@ -98,7 +101,7 @@
                                     <div class="comment-author">
                                         <span style="font-weight: bold;">Sabil</span>
                                         <div class="time">
-                                            <span class="help-text">11 Februari 2019</span>
+                                            <span class="help-text">moer@student.uns.ac.id - 04/06/2019, 9:57:22 PM</span>
                                         </div>
                                     </div>
                                     <div class="comment-body">
@@ -108,21 +111,23 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="comment-item">
-                            <p><i class="fas fa-comment-medical"></i> Tuliskan komentar baru...</p>
-                            <a href="#" class="button" id="new-comment"><i class="fas fa-plus"></i> Komentar Baru</a>
-                            <div class="new-comment-block">
-                                <form action="#" method="POST">
-                                    <strong>Nama</strong>
-                                    <input type="text" name="name" id="name" placeholder="Masukkan nama kamu...">
-                                    <strong>E-mail Address</strong>
-                                    <input type="email" name="name" id="email" placeholder="Masukkan email kamu...">
-                                    <strong>Komentar</strong>
-                                    <textarea name="komentar" id="komentar" cols="30" rows="10" placeholder="Masukkan komentar kamu..."></textarea>
-                                    <button type="submit"><i class="fas fa-plus"></i> Kirim</button>
-                                </form>
-                            </div>
-                        </div>
+                    </div>
+                    <div>
+                            <div class="comment-item">
+                                    <p><i class="fas fa-comment-medical"></i> Tuliskan komentar baru...</p>
+                                    <a href="#" class="button" id="new-comment"><i class="fas fa-plus"></i> Komentar Baru</a>
+                                    <div class="new-comment-block">
+                                        <form id="form-komentar" action="#" method="POST">
+                                            <strong>Nama</strong>
+                                            <input type="text" name="name" id="name" placeholder="Masukkan nama kamu...">
+                                            <strong>E-mail Address</strong>
+                                            <input type="email" name="email" id="email" placeholder="Masukkan email kamu...">
+                                            <strong>Komentar</strong>
+                                            <textarea name="komentar" id="komentar" cols="30" rows="10" placeholder="Masukkan komentar kamu..."></textarea>
+                                            <button type="submit"><i class="fas fa-plus"></i> Kirim</button>
+                                        </form>
+                                    </div>
+                                </div>
                     </div>
                 </div>
             </div>
