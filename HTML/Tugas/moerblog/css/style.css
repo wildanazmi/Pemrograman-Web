@@ -96,6 +96,10 @@ p {
     display: none;
 }
 
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
 .comment-box {
     background: #fff;
     -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.04);
