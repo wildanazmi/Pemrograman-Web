@@ -15,7 +15,7 @@ body {
 }
 
 p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 140%;
     color: #2d2d2d;
 }
@@ -56,12 +56,16 @@ p {
 /* Cover */
 .cover {
     height: 20vh; 
-    width: 100vw; 
-    background-color: var(--primary-dark); 
+    width: 100vw;
+    background: linear-gradient(
+        rgba(0, 54, 55, 0.45), 
+        rgba(0, 54, 55, 0.45)
+      ), url(../images/bg.jpg);
     display:table-cell; 
     vertical-align:middle; 
     text-align:center
 }
+
 
 .cover p {
     margin: 10px 0px 0px 0px;
@@ -141,7 +145,7 @@ input[type=text], input[type=email], textarea {
 }
 
 .news-item > h1 {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 span.help-text {
