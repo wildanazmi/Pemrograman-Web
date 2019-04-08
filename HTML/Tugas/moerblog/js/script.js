@@ -3,6 +3,21 @@ $(document).ready(function() {
     var navbar = $(".navbar")
     var navbarOffset = navbar.offset()
 
+    // var noActivity;
+
+    // function setActivity() {
+    //     noActivity = setTimeout(function() {
+    //         alert("AA");
+    //     }, 30 * 1000)
+    // }
+
+    // function resetActivity() {
+    //     clearTimeout(noActivity);
+    //     setActivity();
+    // }
+
+    // $(document).mouseover(resetActivity)
+
     $(window).scroll(function() {
         if (window.pageYOffset >= navbarOffset.top) {
             navbar.addClass("sticky")
