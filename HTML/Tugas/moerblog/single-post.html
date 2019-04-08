@@ -20,7 +20,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in orci luctus, mollis turpis vel, rutrum massa.</p>
         </div>
         <ul class="navbar">
-            <li class="active"><a href="index.html">Beranda</a></li>
+            <li class="active"><a href="index.html"><i class="fas fa-home"></i> Beranda</a></li>
             <li><a href="about.html">Tentang Saya</a></li>
             <li><a href="contact.html">Kotak</a></li>
             <li>
@@ -119,10 +119,16 @@
                                     <div class="new-comment-block">
                                         <form id="form-komentar" action="#" method="POST">
                                             <strong>Nama</strong>
+                                            <br>
+                                            <span class="help-text form-help-text">Minimal memasukkan 5 huruf.</span>
                                             <input type="text" name="name" id="name" placeholder="Masukkan nama kamu...">
                                             <strong>E-mail Address</strong>
+                                            <br>
+                                            <span class="help-text form-help-text">Masukkan email address yang valid.</span>
                                             <input type="email" name="email" id="email" placeholder="Masukkan email kamu...">
                                             <strong>Komentar</strong>
+                                            <br>
+                                            <span class="help-text form-help-text">Masukkan minimal 20 karakter untuk komentar.</span>
                                             <textarea name="komentar" id="komentar" cols="30" rows="10" placeholder="Masukkan komentar kamu..."></textarea>
                                             <button type="submit"><i class="fas fa-plus"></i> Kirim</button>
                                         </form>
