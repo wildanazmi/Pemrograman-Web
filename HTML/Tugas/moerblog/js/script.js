@@ -3,20 +3,20 @@ $(document).ready(function() {
     var navbar = $(".navbar")
     var navbarOffset = navbar.offset()
 
-    // var noActivity;
+    var noActivity;
 
-    // function setActivity() {
-    //     noActivity = setTimeout(function() {
-    //         alert("AA");
-    //     }, 30 * 1000)
-    // }
+    function setActivity() {
+        noActivity = setTimeout(function() {
+            alert("Kamu sudah tidak aktif selama 30 detik!");
+        }, 30 * 1000)
+    }
 
-    // function resetActivity() {
-    //     clearTimeout(noActivity);
-    //     setActivity();
-    // }
+    function resetActivity() {
+        clearTimeout(noActivity);
+        setActivity();
+    }
 
-    // $(document).mouseover(resetActivity)
+    $(document).mouseover(resetActivity)
 
     $(window).scroll(function() {
         if (window.pageYOffset >= navbarOffset.top) {
