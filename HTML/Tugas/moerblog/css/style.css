@@ -53,11 +53,13 @@ p {
 }
 
 .content {
+    width: 100%;
     min-height: 50vh;
     display: flex;
 }
 
 .main-content {
+    width: inherit;
     padding: 10px 20px;
 }
 
