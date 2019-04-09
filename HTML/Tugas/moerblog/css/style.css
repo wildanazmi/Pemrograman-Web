@@ -25,6 +25,10 @@ td, th {
     text-align: left;
     padding: 8px;
 }
+
+footer {
+    text-align: center;
+}
   
 tr:nth-child(even) {
     background-color: #dddddd;
